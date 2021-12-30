@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 //Import Assets
 import "assets/css/globals.css";
 import "assets/fonts/fontawesome/css/all.min.css";
-import '@natscale/react-calendar/dist/main.css';
+import "@natscale/react-calendar/dist/main.css";
 
 //Import Tools
 import api from "api";
@@ -17,6 +17,7 @@ import routes from "router";
 import { login, notLogin } from "store/actions/auth";
 
 //Import Components
+import Footer from "components/layouts/Footer";
 
 export default function App() {
   //Redux
@@ -61,6 +62,7 @@ export default function App() {
               element={
                 <>
                   <Component />
+                  <Footer />
                 </>
               }
             />
