@@ -95,15 +95,15 @@ export default function Create() {
   return (
     <div className="w-screen h-screen flex items-center justify-center">
       <div className="w-72">
-        <form className="p-4 bg-slate-800 rounded-lg" onSubmit={submit}>
+        <form className="p-4 bg-gray-200 rounded-lg shadow-md" onSubmit={submit}>
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-white">Title</span>
+              <span className="label-text text-black">Title</span>
             </label>
             <input
               type="text"
               placeholder="Taks 1 ..."
-              className="input input-bordered"
+              className="input input-bordered bg-white text-black"
               name="title"
               value={form.title}
               onChange={inputHandler}
@@ -120,12 +120,12 @@ export default function Create() {
           </div>
           <div className="form-control mb-3">
             <label className="label">
-              <span className="label-text text-white">Content</span>
+              <span className="label-text text-black">Content</span>
             </label>
             <textarea
               type="text"
               placeholder="To go to work ..."
-              className="textarea textarea-bordered h-24 resize-none"
+              className="textarea textarea-bordered h-24 resize-none bg-white text-black"
               name="content"
               value={form.content}
               onChange={inputHandler}
@@ -141,7 +141,7 @@ export default function Create() {
             )}
           </div>
           <button
-            className={`btn btn-outline w-full ${loading ? "loading" : ""}`}
+            className={`btn w-full ${loading ? "loading" : ""}`}
             disabled={loading}
           >
             Submit
