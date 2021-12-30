@@ -59,6 +59,7 @@ export default function Diary() {
                     }
                   )
                   .then(() => {
+                    setShowCK(true);
                     Toast.fire({
                       icon: "success",
                       title: "Diary Created",

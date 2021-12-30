@@ -95,10 +95,10 @@ export default function Create() {
   return (
     <div className="w-screen h-screen flex items-center justify-center">
       <div className="w-72">
-        <form className="p-4 bg-slate-900 rounded-lg" onSubmit={submit}>
+        <form className="p-4 bg-slate-800 rounded-lg" onSubmit={submit}>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Title</span>
+              <span className="label-text text-white">Title</span>
             </label>
             <input
               type="text"
@@ -120,7 +120,7 @@ export default function Create() {
           </div>
           <div className="form-control mb-3">
             <label className="label">
-              <span className="label-text">Content</span>
+              <span className="label-text text-white">Content</span>
             </label>
             <textarea
               type="text"

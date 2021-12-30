@@ -1,6 +1,6 @@
 export default function Nav() {
   return (
-    <footer class="p-4 footer bg-transparent footer-center text-black">
+    <footer className="p-4 footer bg-transparent footer-center text-black">
       <div>
         <p>
           Copyright © {new Date().getFullYear()} - All right reserved by{" "}
